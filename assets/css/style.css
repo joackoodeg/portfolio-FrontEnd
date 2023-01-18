@@ -1,15 +1,20 @@
-
 :root{
-	--main-color: #352f44;
-	--main-color-dark: #2a2438;
-	--main-color-light: #dbd8e3;
+	--main-color: #222831;
+	--main-color-dark: #222831;
+	--main-color-light: #eeeeee;
+	--main-color-second:#2d4059;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Montserrat:wght@300;400&family=Roboto:ital,wght@0,400;1,100&display=swap');
 
 body{
-	background-color: #5c5470;
+	background-color:var(--main-color-second);
 	max-width: 100vw;
+}
+
+*
+{
+	font-family: 'League Spartan', sans-serif;
 }
 
 /* NAVBAR */
@@ -27,18 +32,16 @@ body{
 	font-size: 1.2em;
 	margin-bottom: 0;
 	color: var(--main-color-light);
-	font-family: "Poppins",sans-serif;
+	font-family: 'League Spartan', sans-serif;
 	margin-bottom: .2rem;
 	padding-bottom: 4px;
 }
-
 
 /* BANNER + ABOUT_ME PROFILE */
 
 .banner img {
 	max-width: 100%;
-	object-fit: cover;
-
+	object-fit:cover;
 }
 .banner{
 	padding: 0 !important;
@@ -52,18 +55,18 @@ body{
 	position: relative;
 	text-align: center;
     margin-bottom:40px;
+
 }
 .about-me img{
 	border-radius: 50%;
 	width: 350px;
 	height: 350px;
 	position: relative;
-	border: 5px double var(--main-color);
+	border: 15px var(--main-color);
 }
  .about-me h1 {
 	padding-top: 190px;
     background-color:var(--main-color-light);
-    border: 1px solid rgba(0,0,0,.5);
 	border-radius: 10px;
     padding-bottom:10px;
  }
@@ -71,19 +74,17 @@ body{
 	font-style: italic;
     background-color:var(--main-color-light);
     margin-top:30px;
-    border: 1px solid rgba(0,0,0,.5);
 	border-radius: 10px;
-    padding:
+	padding:5px;
  }
 
 .about-me-description{
 	padding: 2%;
-	border: 1px solid rgba(0,0,0,.5);
 	border-radius: 10px;
     background-color:var(--main-color-light);
 }
 .about-me-description h3{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'League Spartan', sans-serif;
 	font-weight: 400;
 	color:var(--main-color-dark);
 	font-size: 2.5em;
@@ -97,23 +98,38 @@ body{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+.section .panel{
+	margin-top:
+}
+
 .panel{
 	border: 1px solid rgba(0,0,0,.5);
 	border-radius: 10px;
 	padding: 20px;
 	width: 90%;
 	height: 90%;
-    border-color: var(--main-color);
+    border-color: white;
 }
 .section-title{
-	font-family: 'Merriweather', serif;
+	font-family: 'League Spartan', sans-serif;
 	font-weight: 700;
 	color: var(--main-color-dark);
 	text-align: center;
 }
 
+
 .card-img-top{
 	object-fit: contain;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* HABILIDADES */
+.progress
+{
+    background-color:white;
 }
 
 #skill-html{
@@ -152,14 +168,12 @@ body{
 	display: inline-block;
 }
 
-.progress
+.bi-github
 {
-    background-color:white;
+color:white;
 }
 
-.card-img-top
+.bi-linkedin
 {
-    padding:10px;
-    margin-left:auto;
-    margin-right:auto;
+color:white;
 }
